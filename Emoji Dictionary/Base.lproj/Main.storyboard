@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="76e-TQ-1tR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,6 +38,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eVW-y9-Gmc">
+            <objects>
+                <viewController id="76e-TQ-1tR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="agz-Lq-HGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wei-cA-2eP">
+                                <rect key="frame" x="92.5" y="60" width="190" height="209"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="175"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prg-fS-7n7">
+                                <rect key="frame" x="166.5" y="319" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="prg-fS-7n7" firstAttribute="centerX" secondItem="agz-Lq-HGF" secondAttribute="centerX" id="0bW-en-9A3"/>
+                            <constraint firstItem="prg-fS-7n7" firstAttribute="top" secondItem="Wei-cA-2eP" secondAttribute="bottom" constant="50" id="3Ec-W9-xch"/>
+                            <constraint firstItem="Wei-cA-2eP" firstAttribute="top" secondItem="ksC-d1-L89" secondAttribute="top" constant="40" id="JAG-3b-d5C"/>
+                            <constraint firstItem="Wei-cA-2eP" firstAttribute="centerX" secondItem="agz-Lq-HGF" secondAttribute="centerX" id="TG4-d3-Kdk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ksC-d1-L89"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZr-A9-nmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="32"/>
         </scene>
     </scenes>
 </document>
