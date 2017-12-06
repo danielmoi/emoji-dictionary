@@ -14,11 +14,33 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
     
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         emojiLabel.text = emoji // AHHHH!!!!!
-
+        if emoji == "😎" {
+            descriptionLabel.text = "Sun Man!"
+        }
+        if emoji == "😡" {
+            descriptionLabel.text = "Grrr"
+        }
+        if emoji == "🤮" {
+            descriptionLabel.text = "Vom vom"
+        }
+        if emoji == "👻" {
+            descriptionLabel.text = "Zombie"
+        }
+        if emoji == "💩" {
+            descriptionLabel.text = "Poopie"
+        }
+        if emoji == "😈" {
+            descriptionLabel.text = "Purples"
+        }
+        if emoji == "😆" {
+            descriptionLabel.text = "LOLOL"
+        }
         // Do any additional setup after loading the view.
     }
 
