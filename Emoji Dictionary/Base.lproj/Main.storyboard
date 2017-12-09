@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aht-4z-bJA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aht-4z-bJA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -39,6 +38,7 @@
                         <segue destination="76e-TQ-1tR" kind="show" identifier="moveSegue" id="gFz-nh-Xd9"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="464.80000000000001" y="31.934032983508249"/>
         </scene>
@@ -56,8 +56,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prg-fS-7n7">
-                                <rect key="frame" x="166.5" y="363" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a smiley man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prg-fS-7n7">
+                                <rect key="frame" x="111" y="363" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0l-iA-8sE">
+                                <rect key="frame" x="122.5" y="434" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-aS-boE">
+                                <rect key="frame" x="129" y="505" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,12 +79,18 @@
                         <constraints>
                             <constraint firstItem="prg-fS-7n7" firstAttribute="centerX" secondItem="agz-Lq-HGF" secondAttribute="centerX" id="0bW-en-9A3"/>
                             <constraint firstItem="prg-fS-7n7" firstAttribute="top" secondItem="Wei-cA-2eP" secondAttribute="bottom" constant="50" id="3Ec-W9-xch"/>
+                            <constraint firstItem="a0l-iA-8sE" firstAttribute="centerX" secondItem="agz-Lq-HGF" secondAttribute="centerX" id="Bwp-4O-aZ1"/>
                             <constraint firstItem="Wei-cA-2eP" firstAttribute="top" secondItem="ksC-d1-L89" secondAttribute="top" constant="40" id="JAG-3b-d5C"/>
                             <constraint firstItem="Wei-cA-2eP" firstAttribute="centerX" secondItem="agz-Lq-HGF" secondAttribute="centerX" id="TG4-d3-Kdk"/>
+                            <constraint firstItem="6E3-aS-boE" firstAttribute="top" secondItem="a0l-iA-8sE" secondAttribute="bottom" constant="50" id="fag-x4-MJL"/>
+                            <constraint firstItem="a0l-iA-8sE" firstAttribute="top" secondItem="prg-fS-7n7" secondAttribute="bottom" constant="50" id="o4d-jy-lIE"/>
+                            <constraint firstItem="6E3-aS-boE" firstAttribute="centerX" secondItem="agz-Lq-HGF" secondAttribute="centerX" id="pVS-LP-KDF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ksC-d1-L89"/>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="6E3-aS-boE" id="MYX-2V-2R1"/>
+                        <outlet property="categoryLabel" destination="a0l-iA-8sE" id="8Gs-1b-IS7"/>
                         <outlet property="descriptionLabel" destination="prg-fS-7n7" id="CSG-ml-fDG"/>
                         <outlet property="emojiLabel" destination="Wei-cA-2eP" id="Lcj-Ki-XhM"/>
                     </connections>

@@ -10,37 +10,47 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
-    var emoji = "NO EMOJI"
+    var emoji: Emoji = Emoji()
     
     @IBOutlet weak var emojiLabel: UILabel!
     
+    @IBOutlet weak var categoryLabel: UILabel!
+    
     @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var birthYearLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emojiLabel.text = emoji // AHHHH!!!!!
-        if emoji == "😎" {
-            descriptionLabel.text = "Sun Man!"
-        }
-        if emoji == "😡" {
-            descriptionLabel.text = "Grrr"
-        }
-        if emoji == "🤮" {
-            descriptionLabel.text = "Vom vom"
-        }
-        if emoji == "👻" {
-            descriptionLabel.text = "Zombie"
-        }
-        if emoji == "💩" {
-            descriptionLabel.text = "Poopie"
-        }
-        if emoji == "😈" {
-            descriptionLabel.text = "Purples"
-        }
-        if emoji == "😆" {
-            descriptionLabel.text = "LOLOL"
-        }
+        emojiLabel.text = emoji.stringEmoji // AHHHH!!!!!
+        descriptionLabel.text = emoji.definition
+        categoryLabel.text = "Category: \(emoji.category)"
+        birthYearLabel.text = "Birth Year: \(emoji.birthYear)"
+        
+        
+        
+//        if emoji == "😎" {
+//            descriptionLabel.text = "Sun Man!"
+//        }
+//        if emoji == "😡" {
+//            descriptionLabel.text = "Grrr"
+//        }
+//        if emoji == "🤮" {
+//            descriptionLabel.text = "Vom vom"
+//        }
+//        if emoji == "👻" {
+//            descriptionLabel.text = "Zombie"
+//        }
+//        if emoji == "💩" {
+//            descriptionLabel.text = "Poopie"
+//        }
+//        if emoji == "😈" {
+//            descriptionLabel.text = "Purples"
+//        }
+//        if emoji == "😆" {
+//            descriptionLabel.text = "LOLOL"
+//        }
         // Do any additional setup after loading the view.
     }
 
